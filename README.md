@@ -1,6 +1,6 @@
 Reflected XSS in HTML Context - Challenge Write-Up
 Introduction
-Welcome to the Reflected XSS in HTML Context challenge in the "XSS Basics" room (https://tryhackme.com/jr/xssbasics)! This challenge introduces you to Reflected Cross-Site Scripting (XSS), a common web vulnerability where attackers inject malicious scripts into a web page that are then executed in a victim’s browser. Your task is to identify and exploit this vulnerability in a web application’s search feature to capture a hidden flag, learning the risks of XSS along the way.
+Welcome to the Reflected XSS in HTML Context challenge in the "XSS Basics" room. This challenge introduces you to Reflected Cross-Site Scripting (XSS), a common web vulnerability where attackers inject malicious scripts into a web page that are then executed in a victim’s browser. Your task is to identify and exploit this vulnerability in a web application’s search feature to capture a hidden flag, learning the risks of XSS along the way.
 In this lab, the HTML context lacks proper encoding, making it vulnerable to script injection.
 Challenge Setup
 The challenge features a basic web application with a search functionality on a page (e.g., search.php). The search feature fails to sanitize user input, resulting in a Reflected XSS vulnerability. When a user submits a search query, the input is reflected directly into the HTML response, allowing script execution. Your goal is to exploit this to retrieve the hidden flag.
